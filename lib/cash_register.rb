@@ -9,7 +9,7 @@ class CashRegister
       @items = []
       @discount = discount
     end
-#_____________ADD ITEMS_____________________
+#_____________ADD_ITEMS_____________________
 
   def add_item(item, price, quantity = 1)
     @price = price.to_f
@@ -25,10 +25,10 @@ class CashRegister
   def items
     @items
   end
-#__________________________________________
+#____________APPLY_DISCOUNTS_______________
 
   def apply_discount
-    if discount == 0
+    if @discount == 0
       puts "There is no discount to apply"
     else
       @price * 0.2
