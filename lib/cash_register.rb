@@ -8,9 +8,6 @@ class CashRegister
       @discount = discount
     end
 
-    def initialize_with
-
-
   def add_item(item, price, quantity = 1)
     i = 0
     until i == quantity
