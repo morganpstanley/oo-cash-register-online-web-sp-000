@@ -37,5 +37,11 @@ class CashRegister
     end
   end
 
+#______________DISCOUNT____________________
+
+  def discount
+    @discount
+  
+
 
 end
