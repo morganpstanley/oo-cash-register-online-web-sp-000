@@ -12,7 +12,7 @@ class CashRegister
 #_____________ADD_ITEMS_______________________
 
   def add_item(item, price, quantity = 1)
-    @price = price.to_f
+    @price =
     i = 0
     until i == quantity
       @items << item
