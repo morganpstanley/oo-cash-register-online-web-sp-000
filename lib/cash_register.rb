@@ -1,5 +1,6 @@
 
 class CashRegister
+  attr_accessor :total
     @@total = 0
     @@items = []
 
@@ -7,10 +8,6 @@ class CashRegister
       @total = 0
     end
 
-
-  def total
-    @@total
-  end
 
   def add_item(item, price, quantity = 1)
     i = 0
