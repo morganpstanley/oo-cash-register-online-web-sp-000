@@ -3,6 +3,10 @@ class CashRegister
     @@total = 0
     @@items = []
 
+    def initialize(employee)
+      @total = 0
+      
+
   def total
     @@total
   end
@@ -13,7 +17,7 @@ class CashRegister
       @@items << item
       i += 1
     end
-    @@total += price * quantity
+    @@total << price * quantity
   end
 
   def items
