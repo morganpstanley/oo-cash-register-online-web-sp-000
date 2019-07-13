@@ -13,6 +13,7 @@ class CashRegister
     i = 0
     until i == quantity
       @@items << item
+      @items << item
       i += 1
     end
     @total += price * quantity
