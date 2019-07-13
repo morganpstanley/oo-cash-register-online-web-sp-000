@@ -2,14 +2,14 @@
 class CashRegister
   attr_accessor :total
 
-#_____________INITIALIZE______________________
+#_____________INITIALIZE_______________________
 
     def initialize(discount = 0)
       @total = 0
       @items = []
       @discount = discount
     end
-#_____________ADD_ITEMS_____________________
+#_____________ADD_ITEMS_______________________
 
   def add_item(item, price, quantity = 1)
     @price = price.to_f
@@ -20,12 +20,12 @@ class CashRegister
     end
     @total += price * quantity
   end
-#_________________ITEMS____________________
+#_________________ITEMS_____________________
 
   def items
     @items
   end
-#____________APPLY_DISCOUNTS_______________
+#____________APPLY_DISCOUNTS________________
 
   def apply_discount
     if @discount == 0
@@ -37,12 +37,15 @@ class CashRegister
     end
   end
 
-#______________DISCOUNT____________________
+#______________DISCOUNT_____________________
 
   def discount
     @discount
   end
 
+#_________VOID_LAST_TRANSACTION_____________
+
+def void_last_transaction
 
 
 end
