@@ -41,7 +41,8 @@ class CashRegister
 
   def discount
     @discount
-  
+  end
+
 
 
 end
