@@ -29,7 +29,7 @@ class CashRegister
 
   def apply_discount
     if @discount == 0
-      puts "There is no discount to apply"
+      return "There is no discount to apply"
     else
       @price *= 0.2
       @total -= @price
