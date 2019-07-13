@@ -15,6 +15,7 @@ class CashRegister
       @@items << item
       i += 1
     end
+    @total += price * quantity
     @@total += price * quantity
   end
 
