@@ -33,7 +33,7 @@ class CashRegister
     else
       @price *= 0.2
       @total -= @price
-      return "After the discount, the total comes to #{@total}."
+      return "After the discount, the total comes to $#{@total}."
     end
   end
 
