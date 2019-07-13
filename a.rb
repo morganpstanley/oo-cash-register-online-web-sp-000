@@ -46,3 +46,6 @@ class CashRegister
 
 
 end
+
+      cash_register_with_discount.add_item("macbook air", 1000)
+      cash_register_with_discount.apply_discount
