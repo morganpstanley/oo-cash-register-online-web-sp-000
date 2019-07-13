@@ -1,4 +1,5 @@
-
+require 'pry
+'
 class CashRegister
   attr_accessor :total
 
@@ -19,6 +20,7 @@ class CashRegister
       i += 1
     end
     @total += price * quantity
+    binding.pry
   end
 #_________________ITEMS____________________
 
