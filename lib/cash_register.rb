@@ -33,7 +33,7 @@ class CashRegister
     else
       @price *= 0.2
       @total -= @price
-      puts "After the discount, the total comes to #{@total}."
+      return "After the discount, the total comes to #{@total}."
     end
   end
 
