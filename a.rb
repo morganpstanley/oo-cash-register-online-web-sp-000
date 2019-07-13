@@ -34,7 +34,7 @@ class CashRegister
       puts "There is no discount to apply"
     else
       @price *= 0.2
-      @total -= @discount
+      @total -= @price
       puts "After the discount, the total comes to #{@total}."
     end
   end
